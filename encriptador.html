@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>encriptador</title>
+    <link rel="stylesheet" href="encriptador.css">
+</head>
+<body>
+    <div class="component-1">
+        <img alt="" class="logo"
+            src="https://static.overlay-tech.com/assets/042bfd9e-e728-45a1-8e0c-53c421b3eb03.png" />
+        <div class="flex-wrapper-two">
+            <p class="ingrese-el-texto-aqui">
+                <textarea class="inputTextoingresado" id="inputText" placeholder="Ingrese el texto"></textarea>
+            </p>
+            <div class="frame-1">
+                <img alt="" class="vector"
+                    src="https://static.overlay-tech.com/assets/6b9e3433-41d5-49fe-98b6-3e1bd41055fa.svg" />
+                <p class="solo-letras-minusculas-y-sin-acentos">
+                    Solo letras minúsculas y sin acentos
+                </p>
+            </div>
+            <div class="frame-3">
+                <div class="button">
+                    <button class="botonEncriptar"
+                        onclick="encriptado(document.getElementById('inputText').value)">Encriptar</button>
+                </div>
+                <div class="button">
+                    <button class="botonDesencriptar"
+                        onclick="desencriptar(document.getElementById('inputText').value)">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-wrapper-one">
+            <div class="frame-5">
+                <textarea  id="outputText" placeholder="Ingresa el texto que desees encriptar o desencriptar"
+                    class="custom-textarea" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="encriptador.js"></script>
+</body>
+</html>
